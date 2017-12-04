@@ -1,0 +1,89 @@
+//////////////////////////////////////////////////////////////////////
+//                                                                  //
+// Programmname: Abstandsmessung                                    //
+// Datum: TT.MM.JJJJ                                                //
+// Beschreibung: In diesem Versuch soll ein Ultraschallsensor ange- //
+//               steuert werden. Die gemessene Distanz in cm soll   //
+//               über den seriellen Monitor ausgegeben werden. In   //
+//               Abhängigkeit der Distanz wird eine LED zum Blinken //
+//               gebracht. Je näher ein Objekt dem Ultraschallsen-  //
+//               sor kommt, desto schneller blinkt die LED, bis sie //
+//               dauerhaft leuchtet.                                //
+//                                                                  //
+// 1. Autor: Vorname Name, Matrikel, Matrikel-Nr.                   //
+// 2. Autor: Vorname Name, Matrikel, Matrikel-Nr.                   //
+//                                                                  //
+//////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////
+//////////           Inkludierte Header-Dateien             //////////
+//////////////////////////////////////////////////////////////////////
+
+#include "Ultrasonic.h"
+
+//////////////////////////////////////////////////////////////////////
+//////////                Definierte Symbole                //////////
+//////////////////////////////////////////////////////////////////////
+
+#define LED_PIN 3       // Pin Festlegung für die LED
+#define US_SENSOR 2     // Pin Festlegung für den Ultraschall-Sensor
+#define BAUDRATE 9600   // Festlegung der Baudrate für UART-Verbindung
+
+//////////////////////////////////////////////////////////////////////
+//////////                Globale Variablen                 //////////
+//////////////////////////////////////////////////////////////////////
+
+// erstelle ein Objekt der Klasse "Ultrasonic" für den Zugriff auf den 
+// Ultraschall-Sensor
+Ultrasonic US_Sensor(US_SENSOR);
+
+//////////////////////////////////////////////////////////////////////
+//////////                  Setup-Funktion                  //////////
+//////////////////////////////////////////////////////////////////////
+
+void setup(void) {
+
+  ////////////////////////////////////////////////////////////
+  //////////               GPIO Setup               //////////
+  ////////////////////////////////////////////////////////////
+
+  // setze LED Pin als Output
+  pinMode(LED_PIN, OUTPUT);
+
+  // serielle Kommunikation konfigurieren (Baudrate: 9600)
+  Serial.begin(BAUDRATE);
+  
+  // warte bis serielle Kommunikation verfügbar
+  while(!Serial);
+
+  return; // Beenden der Funktion
+}
+
+//////////////////////////////////////////////////////////////////////
+//////////                  Loop-Funktion                   //////////
+//////////////////////////////////////////////////////////////////////
+
+void loop(void) {
+
+  ////////////////////////////////////////////////////////////
+  //////////            Lokale Variablen            //////////
+  ////////////////////////////////////////////////////////////
+
+  // erstellen Sie eine Variable für die Erfassung der Distanz
+  // in Centimeter und eine Variable zur Speicherung des aktu-
+  // ellen Delays für die Blinkfrequenz der LED
+
+  ////////////////////////////////////////////////////////////
+  //////////              Hauptprogramm             //////////
+  ////////////////////////////////////////////////////////////
+
+  // fügen Sie hier ihr Hauptprogramm ein
+
+}
+
+//////////////////////////////////////////////////////////////////////
+//////////              Unterfunktionen / ISR               //////////
+//////////////////////////////////////////////////////////////////////
+
+// Erstellen Sie hier eine Unterfunktion, die ihnen einen Delay-Wert 
+// zurück gibt in Abhängigkeit der gemessenen Distanz.
