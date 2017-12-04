@@ -15,7 +15,7 @@
 
 <div id='Sensor'/>
 
-##  <p>&#x1F4C8; 1. Wie funktioniert PWM im Mikrocontroller</p>
+##  <p>&#x1F50A; 1. Wie funktioniert der Ultraschallsensor</p>
 
 
 
@@ -23,7 +23,23 @@
 
 ##  <p>&#x1F6E0; 2. Versuchsaufbau</p>
 
+Im Praktikum bekommen Sie ein Base Shield, Breadboard und Verbindungskabel, sowie die Bauelemente: Widerstand und LED, ausgehändigt. Das Base Shield ist eine Adapterplatine und wird auf den Arduino UNO gesteckt. Die Adapterplatine verknüpft die GPIO-Pins des Arduino UNO zu entsprechenden Sensor-Anschlussterminals. Über diese können später Sensoren, wie der Ultraschallsensor, angeschlossen werden.
 
+![](http://es-lab.de:60085/attachments/fd90931f-dd5f-48ea-bafe-916ea6e8b4a3)
+
+Stecken Sie das Base Shield auf den Arduino. Die ausgehändigten Bauteile sind wie im unten stehenden Bild aufzubauen bzw. anzuordnen. Der Ultraschallsensor wird mit dem Port `D2` und die LED mit dem GPIO-Pin `3` verbunden.
+
+![](http://es-lab.de:60085/attachments/32676c50-72e8-4cae-a99a-8e87ce3955ac)
+
+Der unten stehende Schaltplan verdeutlicht den Versuchsaufbau. 
+
+![](http://es-lab.de:60085/attachments/b741bebf-1464-4e1a-8950-f658fbf63f64)
+
+Beachten Sie beim Aufbau die Polarität der LED. Anderenfalls wird die LED nicht leuchten. Die unten stehende Abbildung verdeutlicht den Aufbau der LED sowie dessen Polarität bzw. Stromrichtung.
+
+[![](http://es-lab.de:60085/attachments/16e5c297-ab46-4f6a-8032-0ab0dc5ddcab)](http://letsgoingwiki.reutlingen-university.de/mediawiki/images/thumb/8/88/Sensor_CH13_LED_aufbau.jpg/800px-Sensor_CH13_LED_aufbau.jpg)
+
+**Bildquelle:** [http://letsgoingwiki.reutlingen-university.de/mediawiki/images/thumb/8/88/Sensor_CH13_LED_aufbau.jpg/800px-Sensor_CH13_LED_aufbau.jpg](http://letsgoingwiki.reutlingen-university.de/mediawiki/images/thumb/8/88/Sensor_CH13_LED_aufbau.jpg/800px-Sensor_CH13_LED_aufbau.jpg)
 
 <div id='Aufgabenstellung'/>
 
