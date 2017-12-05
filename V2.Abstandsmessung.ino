@@ -47,14 +47,6 @@ void setup(void) {
   //////////               GPIO Setup               //////////
   ////////////////////////////////////////////////////////////
 
-  // setze LED Pin als Output
-  pinMode(LED_PIN, OUTPUT);
-
-  // serielle Kommunikation konfigurieren (Baudrate: 9600)
-  Serial.begin(BAUDRATE);
-  
-  // warte bis serielle Kommunikation verfügbar
-  while(!Serial);
 
   return; // Beenden der Funktion
 }
