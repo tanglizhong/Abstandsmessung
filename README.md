@@ -17,17 +17,17 @@
 
 ##  <p>&#x1F50A; 1. Wie funktioniert der Ultraschallsensor</p>
 
-Ultraschallsensoren als Abstandssensoren erkennen berührungslos Objekte in ihrem Empfangsbereich und sind in der Lage, die Entfernung vom Sensor zu diesen Objekten zu messen. Die Abstandsmessung funktioniert nach dem Prinzip der Laufzeitmessung von hochfrequenten Impulsen. Die ausgesendeten Impulse breiten sich mit Schallgeschwindigkeit im Raum aus. Treffen diese auf ein Objekt werden die Schallimpulse reflektiert. Das so entstehende Echo wird vom Sensor wieder aufgenommen und aus der Zeitspanne zwischen Senden und Empfangen des Schallimpulses wird der Abstand zum Objekt berechnet. Das unten gezeigt Bild verdeutlicht die Funktionsweise. 
+Ultraschallsensoren als Abstandssensoren erkennen berührungslos Objekte in ihrem Empfangsbereich und sind in der Lage, die Entfernung vom Sensor zu diesen Objekten zu messen. Die Abstandsmessung funktioniert nach dem Prinzip der Laufzeitmessung von hochfrequenten Impulsen. Die ausgesendeten Impulse breiten sich mit Schallgeschwindigkeit im Raum aus. Treffen diese auf ein Objekt werden die Schallimpulse reflektiert. Das so entstehende Echo wird vom Sensor wieder aufgenommen und aus der Zeitspanne zwischen Senden und Empfangen des Schallimpulses wird der Abstand zum Objekt berechnet. Das unten gezeigte Bild verdeutlicht die Funktionsweise. 
 
 [![](http://es-lab.de:60085/attachments/ee99df42-306e-4a8b-a38f-b42cedc72091)](https://www.microsonic.de/de/Medien/Medien/Relaunch-2015/Service/ultraschallprinzip.png)
 
-**Bildquelle:** https://www.microsonic.de/de/Medien/Medien/Relaunch-2015/Service/ultraschallprinzip.png
+**Bildquelle (vgl.):** https://www.microsonic.de/de/Medien/Medien/Relaunch-2015/Service/ultraschallprinzip.png
 
 Nachfolgend soll die Berechnung der Distanz (Abstand Sensor zum Objekt) genauer betrachtet werden. Als Grundlage dient die Formel für die Berechnung der Geschwindigkeit, die nach der Strecke `s` umgestellt wird. Die Geschwindigkeit `v` ist hierbei die Schallgeschwindigkeit und `t` ist die Zeit vom Sensor zum Objekt. Des Weiteren muss man beachten, dass der Schallimpuls zweimal die Distanz überwinden muss und somit die gemessene Zeit <code>&tau;</code> doppelt so groß ist wie die Zeit `t`, die der Schall vom Sensor zum Objekt benötigt. Somit ist <code>t=&tau;/2</code>.
 
 ![](http://es-lab.de:60085/attachments/411216a5-2403-4cf8-be16-3fe394152e94)
 
-Die Schallgeschwindigkeit `v` im idealen Gas wird mit:
+Die Schallgeschwindigkeit `v` im idealen Gas wird mit
 
 ![](http://es-lab.de:60085/attachments/4eb46826-8ebc-4b1a-8403-b65799f93317)
 
@@ -51,7 +51,7 @@ Abschließend erhält man für die Berechnung der Distanz `s` die Formel
 
 ##  <p>&#x1F6E0; 2. Versuchsaufbau</p>
 
-Im Praktikum bekommen Sie ein Base Shield, Breadboard und Verbindungskabel, sowie die Bauelemente: Widerstand und LED, ausgehändigt. Das Base Shield ist eine Adapterplatine und wird auf den Arduino UNO gesteckt. Die Adapterplatine verknüpft die GPIO-Pins des Arduino UNO zu entsprechenden Sensor-Anschlussterminals. Über diese können später Sensoren, wie der Ultraschallsensor, angeschlossen werden.
+Im Praktikum bekommen Sie ein Base Shield, Breadboard und Verbindungskabel, sowie die Bauelemente: Widerstand und LED, ausgehändigt. Das Base Shield ist eine Adapterplatine und wird auf den Arduino UNO gesteckt. Die Adapterplatine verknüpft die GPIO-Pins des Arduino UNO mit den entsprechenden Sensor-Anschlussterminals. Über diese können später Sensoren, wie der Ultraschallsensor, angeschlossen werden.
 
 ![](http://es-lab.de:60085/attachments/fd90931f-dd5f-48ea-bafe-916ea6e8b4a3)
 
@@ -97,7 +97,7 @@ Des Weiteren sollen Sie sich mit der Erstellung einer eigenen Unterfunktion besc
 - nutzen Sie die Programmvorlage `V2.Abstandsmessung.ino` für die Erstellung des Programms,
 - erfassen Sie die ermittelte Distanz vom Ultraschallsensor `Grove Ultrasonic Ranger`,
 - geben Sie den erfassten Abstand über den serielle Monitor aus,
-- lassen die eine LED in Abhängigkeit der erfassten Distanz blinken (beachten Sie dabei die Bedingungen für die Blickfrequenzen),
+- lassen die eine LED in Abhängigkeit der erfassten Distanz blinken (beachten Sie dabei die Bedingungen für die Blinkfrequenzen),
 - legen Sie eine eigene Unterfunktion an, die Ihnen einen Delay-Wert in Abhängigkeit der gemessenen Distanz für die Blinkfrequenz zurück gibt (Übergabeparameter: Distanz, Rückgabewert: Delay),
 - Übergabe des fertigen Programms an den Praktikumsleiter.
 
