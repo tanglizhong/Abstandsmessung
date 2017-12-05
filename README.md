@@ -15,9 +15,6 @@
 
 <div id='Sensor'/>
 
-##  <p>&#x1F50A; 1. Wie funktioniert der Ultraschallsensor</p>
-
-
 
 <div id='Versuchsaufbau'/>
 
@@ -64,6 +61,8 @@ Des Weiteren sollen Sie sich mit der Erstellung einer eigenen Unterfunktion besc
 - lassen die eine LED in Abhängigkeit der erfassten Distanz blinken (beachten Sie dabei die Bedingungen für die Blickfrequenzen),
 - legen Sie eine eigene Unterfunktion an, die Ihnen einen Delay-Wert in Abhängigkeit der gemessenen Distanz für die Blinkfrequenz zurück gibt (Übergabeparameter: Distanz, Rückgabewert: Delay),
 - Übergabe des fertigen Programms an den Praktikumsleiter.
+
+**Hinweis zur Datenerfassung:** Damit Sie die Daten vom Ultraschallsensor abrufen können, benötigen Sie die `Grove-Ultrasonic-Ranger-Library`, die Sie hier im Repository finden. Diese Bibliothek muss der Arduino IDE hinzugefügt werden. Eine Anleitung Dazu finden Sie im Repository „[Praktikumsunterlagen und Praktikumsinformationen](http://es-lab.de:60085/Maschinenprogrammierung)“ in der Präsentation „[Einführung in Arduino](http://es-lab.de:60085/Maschinenprogrammierung/Praktikumsunterlagen_und_Praktikumsinformationen/src/master/2.%20Einf%c3%bchrung%20in%20Arduino.pdf)“.  Die Bibliothek enthält auch ein Beispiel, welches Ihnen die benötigte Klasse „Ultrasonic“ und deren Funktionen erläutert. Schauen Sie sich dieses Beispiel an und übernehmen Sie die benötigten Funktionen in Ihr Programm.  
 
 <div id='Literaturverzeichnis'/>
 
