@@ -45,7 +45,25 @@ Beachten Sie beim Aufbau die Polarität der LED. Anderenfalls wird die LED nicht
 
 ##  <p>&#x26A0; 3. Aufgabenstellung</p>
 
+Sie sollen ein Programm schreiben, welches den ermittelten Abstand vom Ultraschallsensor erfasst und diesen über den seriellen Monitor ausgibt. Verwenden Sie für das Programm die entsprechende Programmvorlage im Repository. Des Weiteren soll eine LED in Abhängigkeit des Abstandes angesteuert werden. Die LED soll dabei mit sinkendem Abstand immer schneller blinken und bei einem sehr kurzen Abstand dauerhaft leuchten. Die genauen Blinkfrequenzen in Abhängigkeit des Abstandes entnehmen Sie den nachfolgenden Bedingungen:
 
+> Distanz > 300 cm &rarr; 0,5 Hz, <br>
+> 200 cm < Distanz &le; 300 cm &rarr; 1 Hz, <br>
+> 150 cm < Distanz &le; 200 cm &rarr; 2 Hz, <br>
+> 100 cm < Distanz &le; 150 cm &rarr; 5 Hz, <br>
+> 50 cm < Distanz &le; 100 cm &rarr; 10 Hz, <br>
+> 30 cm < Distanz &le; 50 cm &rarr; 25 Hz, <br>
+> 10 cm < Distanz &le; 30 cm &rarr; 50 Hz, <br>
+> Distanz &le; 10 cm &rarr; LED leuchtet dauerhaft.
+
+Des Weiteren sollen Sie sich mit der Erstellung einer eigenen Unterfunktion beschäftigen. Diese Unterfunktion soll Ihnen einen Delay-Wert für die Blinkfrequenz der LED in Abhängigkeit des gemessenen Abstandes zurückgeben. Zusammenfassend ergeben sich folgende Aufgaben:
+
+- nutzen Sie die Programmvorlage `V2.Abstandsmessung.ino` für die Erstellung des Programms,
+- erfassen Sie die ermittelte Distanz vom Ultraschallsensor `Grove Ultrasonic Ranger`,
+- geben Sie den erfassten Abstand über den serielle Monitor aus,
+- lassen die eine LED in Abhängigkeit der erfassten Distanz blinken (beachten Sie dabei die Bedingungen für die Blickfrequenzen),
+- legen Sie eine eigene Unterfunktion an, die Ihnen einen Delay-Wert in Abhängigkeit der gemessenen Distanz für die Blinkfrequenz zurück gibt (Übergabeparameter: Distanz, Rückgabewert: Delay),
+- Übergabe des fertigen Programms an den Praktikumsleiter.
 
 <div id='Literaturverzeichnis'/>
 
