@@ -61,6 +61,7 @@ Stecken Sie das Base Shield auf den Arduino. Die ausgehändigten Bauteile sind w
 
 Der Ultraschallsensor besitzt folgende Merkmale:
 
+> Schnittstelle: Digital (1-Wire) <br>
 > Versorgungsspannung: 3,2 V - 5,2 V <br>
 > Versorgungsstrom: 8 mA <br>
 > Ultraschallfrequenz: 40 kHz <br>
