@@ -117,12 +117,15 @@ Des Weiteren sollen Sie sich mit der Erstellung einer eigenen Unterfunktion besc
 
 ---
 
-**Hochschule Anhalt | Anhalt University of Applied Sciences | Fachbereich 6 EMW <br> Praktikum Maschinenprogrammierung EIT, MT und BMT 3. Semester**
+**Hochschule Anhalt | Anhalt University of Applied Sciences | Fachbereich 6 EMW <br> Praktikum Mikrocomputertechnik für EIT, MT und BMT des 3. & 4. Semesters**
 
-<p>Prof. Dr. Ingo Chmielewski<br> 
+<p>Prof. Dr.-Ing. Ingo Chmielewski<br> 
 <a href="mailto:Ingo.Chmielewski@HS-Anhalt.de">&#x1F4E7; Ingo.Chmielewski@HS-Anhalt.de</a></p>
 
-<p>Tobias Müller, B. Eng.<br>
-<a href="mailto:Tobias.Mueller@Student.HS-Anhalt.de">&#x1F4E7; Tobias.Mueller@Student.HS-Anhalt.de</a></p>
+<p>Tobias Müller, M. Eng.<br>
+<a href="mailto:Tobias.Mueller@HS-Anhalt.de">&#x1F4E7; Tobias.Mueller@HS-Anhalt.de</a></p>
 
-<p>&#x00A9; es-lab.de, 04.12.2017</p>
+<p>Dipl. Ing. Harald Prütting<br>
+<a href="mailto:Harald.Pruetting@hs-anhalt.de">&#x1F4E7; Harald.Pruetting@hs-anhalt.de </a></p>
+
+<p>&#x00A9; es-lab.de, 15.03.2018</p>
