@@ -40,7 +40,7 @@ berechnet. Kappa <code>&kappa;</code> ist der Isentropenexponent (oder auch Adia
 
 ![](https://es-lab.de:60085/attachments/cec44a17-b1af-4c50-b93e-01f08891ec86)
 
-`T` ist die Lufttemperatur in Kelvin und `M` die mittlere Molmasse. Somit ergibt sich mit einer mittleren Molmasse von `M = 0,02896 kg/mol` für Stickstoff <code>N<sub>2</sub></code> und Sauerstoff <code>O<sub>2</sub></code> bei Normaltemperatur `T = 293,15 K` (20°C) eine Schallgeschwindigkeit von
+`T` ist die Lufttemperatur in Kelvin und `M` die mittlere Molmasse. Somit ergibt sich bei einer mittleren Molmasse von `M = 0,02896 kg/mol` für Stickstoff <code>N<sub>2</sub></code> und Sauerstoff <code>O<sub>2</sub></code> bei Normaltemperatur `T = 293,15 K` (20°C) eine Schallgeschwindigkeit von
 
 ![](https://es-lab.de:60085/attachments/078955f7-25a2-410c-80d9-bc630f5114e9)
 
