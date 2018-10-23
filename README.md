@@ -101,7 +101,7 @@ Des Weiteren sollen Sie sich mit der Erstellung einer eigenen Unterfunktion besc
 - geben Sie den erfassten Abstand über den serielle Monitor aus,
 - lassen die eine LED in Abhängigkeit der erfassten Distanz blinken (beachten Sie dabei die Bedingungen für die Blinkfrequenzen),
 - legen Sie eine eigene Unterfunktion an, die Ihnen einen Delay-Wert in Abhängigkeit der gemessenen Distanz für die Blinkfrequenz zurück gibt (Übergabeparameter: Distanz, Rückgabewert: Delay),
-- Übergabe des fertigen Programms an den Praktikumsleiter.
+- laden Sie zum Schluss Ihr Programm auf Git hoch und schalten Sie das entsprechende Repository dem Praktikumsleiter frei.
 
 > **Hinweis zur Datenerfassung:** Damit Sie die Daten vom Ultraschallsensor abrufen können, benötigen Sie die `Grove-Ultrasonic-Ranger-Library`, die Sie hier im Repository finden. Diese Bibliothek muss der Arduino IDE hinzugefügt werden. Eine Anleitung Dazu finden Sie im Repository „[Praktikumsunterlagen und Praktikumsinformationen](https://es-lab.de:60085/Mikrocomputertechnik/Praktikumsunterlagen_und_Praktikumsinformationen)“ in der Präsentation „[Einführung in Arduino](https://es-lab.de:60085/Mikrocomputertechnik/Praktikumsunterlagen_und_Praktikumsinformationen/src/master/2.Einf%c3%bchrung_in_Arduino.pdf)“.  Die Bibliothek enthält auch ein Beispiel, welches Ihnen die benötigte Klasse „Ultrasonic“ und deren Funktionen erläutert. Schauen Sie sich dieses Beispiel an und übernehmen Sie die benötigten Funktionen in Ihr Programm.  
 
