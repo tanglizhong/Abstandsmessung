@@ -127,6 +127,6 @@ Des Weiteren sollen Sie sich mit der Erstellung einer eigenen Unterfunktion besc
 <a href="mailto:Tobias.Mueller@HS-Anhalt.de">&#x1F4E7; Tobias.Mueller@HS-Anhalt.de</a></p>
 
 <p>Dipl. Ing. Harald Prütting<br>
-<a href="mailto:Harald.Pruetting@hs-anhalt.de">&#x1F4E7; Harald.Pruetting@hs-anhalt.de </a></p>
+<a href="mailto:Harald.Pruetting@HS-Anhalt.de">&#x1F4E7; Harald.Pruetting@HS-Anhalt.de </a></p>
 
-<p>&#x00A9; es-lab.de, 15.03.2018</p>
+<p>&#x00A9; es-lab.de, 08.11.2018</p>
