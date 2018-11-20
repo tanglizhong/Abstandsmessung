@@ -1,7 +1,7 @@
-[![](https://es-lab.de:60085/attachments/f038091f-58a3-4626-8d4c-7c56954ee430)](https://www.hs-anhalt.de)
+[![](https://gogs.es-lab.de/attachments/f038091f-58a3-4626-8d4c-7c56954ee430)](https://www.hs-anhalt.de)
 # Abstandsmessung
 
-[![](https://img.shields.io/badge/Arduino-UNO-00BFFF.svg?style=plain)](https://store.arduino.cc/usa/arduino-uno-rev3) [![](https://img.shields.io/badge/Arduino-IDE-01DF74.svg?style=plain)](https://www.arduino.cc/en/main/software) [![](https://img.shields.io/badge/Version%20Control%20System-Git-FF8000.svg?style=plain)](https://git-scm.com/) [![](https://img.shields.io/badge/Microsoft-VSC-7401DF.svg?style=plain)](https://code.visualstudio.com/) [![](https://img.shields.io/badge/Adobe-PDF-red.svg?style=plain)](https://get.adobe.com/de/reader/) [![](https://img.shields.io/badge/Download-zip-yellow.svg?style=plain)](https://es-lab.de:60085/Mikrocomputertechnik/Abstandsmessung/archive/master.zip)
+[![](https://img.shields.io/badge/Arduino-UNO-00BFFF.svg?style=plain)](https://store.arduino.cc/usa/arduino-uno-rev3) [![](https://img.shields.io/badge/Arduino-IDE-01DF74.svg?style=plain)](https://www.arduino.cc/en/main/software) [![](https://img.shields.io/badge/Version%20Control%20System-Git-FF8000.svg?style=plain)](https://git-scm.com/) [![](https://img.shields.io/badge/Microsoft-VSC-7401DF.svg?style=plain)](https://code.visualstudio.com/) [![](https://img.shields.io/badge/Adobe-PDF-red.svg?style=plain)](https://get.adobe.com/de/reader/) [![](https://img.shields.io/badge/Download-zip-yellow.svg?style=plain)](https://gogs.es-lab.de/Mikrocomputertechnik/Abstandsmessung/archive/master.zip)
 
 ## <p>&#x1F4DC; Inhaltsverzeichnis</p>
 1. **[Wie funktioniert der Ultraschallsensor](#Sensor)**
@@ -9,8 +9,8 @@
 3. **[Aufgabenstellung](#Aufgabenstellung)**
 4. **[Literaturverzeichnis](#Literaturverzeichnis)**
 
->**Hinweis:** Wenn Sie dieses Repository downloaden möchten, können Sie es direkt als [ZIP](https://es-lab.de:60085/Mikrocomputertechnik/Abstandsmessung/archive/master.zip)-Datei herunterladen, oder mit Hilfe des Git-Repository-Links auf Ihren Rechner klonen. 
->**<p>&#x2601; Git-Repository-Link:<br> https://es-lab.de:60085/Mikrocomputertechnik/Abstandsmessung</p>**
+>**Hinweis:** Wenn Sie dieses Repository downloaden möchten, können Sie es direkt als [ZIP](https://gogs.es-lab.de/Mikrocomputertechnik/Abstandsmessung/archive/master.zip)-Datei herunterladen, oder mit Hilfe des Git-Repository-Links auf Ihren Rechner klonen. 
+>**<p>&#x2601; Git-Repository-Link:<br> https://gogs.es-lab.de/Mikrocomputertechnik/Abstandsmessung</p>**
 
 ---
 
@@ -20,33 +20,33 @@
 
 Ultraschallsensoren als Abstandssensoren erkennen berührungslos Objekte in ihrem Empfangsbereich und sind in der Lage, die Entfernung vom Sensor zu diesen Objekten zu messen. Die Abstandsmessung funktioniert nach dem Prinzip der Laufzeitmessung von hochfrequenten Impulsen. Die ausgesendeten Impulse breiten sich mit Schallgeschwindigkeit im Raum aus. Treffen diese auf ein Objekt werden die Schallimpulse reflektiert. Das so entstehende Echo wird vom Sensor wieder aufgenommen und aus der Zeitspanne zwischen Senden und Empfangen des Schallimpulses wird der Abstand zum Objekt berechnet. Das unten gezeigte Bild verdeutlicht die Funktionsweise. 
 
-[![](https://es-lab.de:60085/attachments/ee99df42-306e-4a8b-a38f-b42cedc72091)](https://www.microsonic.de/de/Medien/Medien/Relaunch-2015/Service/ultraschallprinzip.png)
+[![](https://gogs.es-lab.de/attachments/ee99df42-306e-4a8b-a38f-b42cedc72091)](https://www.microsonic.de/de/Medien/Medien/Relaunch-2015/Service/ultraschallprinzip.png)
 
 **Bildquelle (vgl.):** https://www.microsonic.de/de/Medien/Medien/Relaunch-2015/Service/ultraschallprinzip.png
 
 Nachfolgend soll die Berechnung der Distanz (Abstand Sensor zum Objekt) genauer betrachtet werden. Als Grundlage dient die Formel für die Berechnung der Geschwindigkeit, die nach der Strecke `s` umgestellt wird. Die Geschwindigkeit `v` ist hierbei die Schallgeschwindigkeit und `t` ist die Zeit vom Sensor zum Objekt. Des Weiteren muss man beachten, dass der Schallimpuls zweimal die Distanz überwinden muss und somit die gemessene Zeit <code>&tau;</code> doppelt so groß ist wie die Zeit `t`, die der Schall vom Sensor zum Objekt benötigt. Somit ist <code>t=&tau;/2</code>.
 
-![](https://es-lab.de:60085/attachments/411216a5-2403-4cf8-be16-3fe394152e94)
+![](https://gogs.es-lab.de/attachments/411216a5-2403-4cf8-be16-3fe394152e94)
 
 Die Schallgeschwindigkeit `v` im idealen Gas wird mit
 
-![](https://es-lab.de:60085/attachments/4eb46826-8ebc-4b1a-8403-b65799f93317)
+![](https://gogs.es-lab.de/attachments/4eb46826-8ebc-4b1a-8403-b65799f93317)
 
 berechnet. Kappa <code>&kappa;</code> ist der Isentropenexponent (oder auch Adiabatenexponent genannt). Dieser beträgt bei trockener Luft bzw. für zweiatomige Gase (z. B. Stickstoff <code>N<sub>2</sub></code>, Wasserstoff <code>H<sub>2</sub></code> oder Sauerstoff <code>O<sub>2</sub></code>) bei Normaldruck 
 
-![](https://es-lab.de:60085/attachments/cf216497-6440-4cb9-b323-c327524a5195)
+![](https://gogs.es-lab.de/attachments/cf216497-6440-4cb9-b323-c327524a5195)
 
 `R` ist die Gaskonstante mit
 
-![](https://es-lab.de:60085/attachments/cec44a17-b1af-4c50-b93e-01f08891ec86)
+![](https://gogs.es-lab.de/attachments/cec44a17-b1af-4c50-b93e-01f08891ec86)
 
 `T` ist die Lufttemperatur in Kelvin und `M` die mittlere Molmasse. Somit ergibt sich bei einer mittleren Molmasse von `M = 0,02896 kg/mol` für Stickstoff <code>N<sub>2</sub></code> und Sauerstoff <code>O<sub>2</sub></code> bei Normaltemperatur `T = 293,15 K` (20°C) eine Schallgeschwindigkeit von
 
-![](https://es-lab.de:60085/attachments/078955f7-25a2-410c-80d9-bc630f5114e9)
+![](https://gogs.es-lab.de/attachments/078955f7-25a2-410c-80d9-bc630f5114e9)
 
 Abschließend erhält man für die Berechnung der Distanz `s` die Formel
 
-![](https://es-lab.de:60085/attachments/d17300b7-0fea-4ff4-bd17-00feb50bc42e)
+![](https://gogs.es-lab.de/attachments/d17300b7-0fea-4ff4-bd17-00feb50bc42e)
 
 <div id='Versuchsaufbau'/>
 
@@ -54,11 +54,11 @@ Abschließend erhält man für die Berechnung der Distanz `s` die Formel
 
 Im Praktikum bekommen Sie ein Base Shield, Breadboard und Verbindungskabel, sowie die Bauelemente: Widerstand und LED, ausgehändigt. Das Base Shield ist eine Adapterplatine und wird auf den Arduino UNO gesteckt. Die Adapterplatine verknüpft die GPIO-Pins des Arduino UNO mit den entsprechenden Sensor-Anschlussterminals. Über diese können später Sensoren, wie der Ultraschallsensor, angeschlossen werden.
 
-![](https://es-lab.de:60085/attachments/fd90931f-dd5f-48ea-bafe-916ea6e8b4a3)
+![](https://gogs.es-lab.de/attachments/fd90931f-dd5f-48ea-bafe-916ea6e8b4a3)
 
 Stecken Sie das Base Shield auf den Arduino. Die ausgehändigten Bauteile sind wie im unten stehenden Bild aufzubauen bzw. anzuordnen. Der Ultraschallsensor wird mit dem Port `D2` und die LED mit dem GPIO-Pin `3` verbunden.
 
-![](https://es-lab.de:60085/attachments/32676c50-72e8-4cae-a99a-8e87ce3955ac)
+![](https://gogs.es-lab.de/attachments/32676c50-72e8-4cae-a99a-8e87ce3955ac)
 
 Der Ultraschallsensor besitzt folgende Merkmale:
 
@@ -71,11 +71,11 @@ Der Ultraschallsensor besitzt folgende Merkmale:
 
 Der unten stehende Schaltplan verdeutlicht den Versuchsaufbau. 
 
-![](https://es-lab.de:60085/attachments/b741bebf-1464-4e1a-8950-f658fbf63f64)
+![](https://gogs.es-lab.de/attachments/b741bebf-1464-4e1a-8950-f658fbf63f64)
 
 Beachten Sie beim Aufbau die Polarität der LED. Anderenfalls wird die LED nicht leuchten. Die unten stehende Abbildung verdeutlicht den Aufbau der LED sowie dessen Polarität bzw. Stromrichtung.
 
-[![](https://es-lab.de:60085/attachments/16e5c297-ab46-4f6a-8032-0ab0dc5ddcab)](http://letsgoingwiki.reutlingen-university.de/mediawiki/images/thumb/8/88/Sensor_CH13_LED_aufbau.jpg/800px-Sensor_CH13_LED_aufbau.jpg)
+[![](https://gogs.es-lab.de/attachments/16e5c297-ab46-4f6a-8032-0ab0dc5ddcab)](http://letsgoingwiki.reutlingen-university.de/mediawiki/images/thumb/8/88/Sensor_CH13_LED_aufbau.jpg/800px-Sensor_CH13_LED_aufbau.jpg)
 
 **Bildquelle:** [http://letsgoingwiki.reutlingen-university.de/mediawiki/images/thumb/8/88/Sensor_CH13_LED_aufbau.jpg/800px-Sensor_CH13_LED_aufbau.jpg](http://letsgoingwiki.reutlingen-university.de/mediawiki/images/thumb/8/88/Sensor_CH13_LED_aufbau.jpg/800px-Sensor_CH13_LED_aufbau.jpg)
 
@@ -103,7 +103,7 @@ Des Weiteren sollen Sie sich mit der Erstellung einer eigenen Unterfunktion besc
 - legen Sie eine eigene Unterfunktion an, die Ihnen einen Delay-Wert in Abhängigkeit der gemessenen Distanz für die Blinkfrequenz zurück gibt (Übergabeparameter: Distanz, Rückgabewert: Delay),
 - laden Sie zum Schluss Ihr Programm auf Git hoch und schalten Sie das entsprechende Repository dem Praktikumsleiter frei.
 
-> **Hinweis zur Datenerfassung:** Damit Sie die Daten vom Ultraschallsensor abrufen können, benötigen Sie die `Grove-Ultrasonic-Ranger-Library`, die Sie hier im Repository finden. Diese Bibliothek muss der Arduino IDE hinzugefügt werden. Eine Anleitung Dazu finden Sie im Repository „[Praktikumsunterlagen und Praktikumsinformationen](https://es-lab.de:60085/Mikrocomputertechnik/Praktikumsunterlagen_und_Praktikumsinformationen)“ in der Präsentation „[Einführung in Arduino](https://es-lab.de:60085/Mikrocomputertechnik/Praktikumsunterlagen_und_Praktikumsinformationen/src/master/2.Einf%c3%bchrung_in_Arduino.pdf)“.  Die Bibliothek enthält auch ein Beispiel, welches Ihnen die benötigte Klasse „Ultrasonic“ und deren Funktionen erläutert. Schauen Sie sich dieses Beispiel an und übernehmen Sie die benötigten Funktionen in Ihr Programm.  
+> **Hinweis zur Datenerfassung:** Damit Sie die Daten vom Ultraschallsensor abrufen können, benötigen Sie die `Grove-Ultrasonic-Ranger-Library`, die Sie hier im Repository finden. Diese Bibliothek muss der Arduino IDE hinzugefügt werden. Eine Anleitung Dazu finden Sie im Repository „[Praktikumsunterlagen und Praktikumsinformationen](https://gogs.es-lab.de/Mikrocomputertechnik/Praktikumsunterlagen_und_Praktikumsinformationen)“ in der Präsentation „[Einführung in Arduino](https://gogs.es-lab.de/Mikrocomputertechnik/Praktikumsunterlagen_und_Praktikumsinformationen/src/master/2.Einf%c3%bchrung_in_Arduino.pdf)“.  Die Bibliothek enthält auch ein Beispiel, welches Ihnen die benötigte Klasse „Ultrasonic“ und deren Funktionen erläutert. Schauen Sie sich dieses Beispiel an und übernehmen Sie die benötigten Funktionen in Ihr Programm.  
 
 <div id='Literaturverzeichnis'/>
 
