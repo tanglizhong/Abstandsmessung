@@ -10,9 +10,9 @@
 //               sor kommt, desto schneller blinkt die LED, bis sie //
 //               dauerhaft leuchtet.                                //
 //                                                                  //
-// 1. Autor: Jing    Zhang,   4070426.                  //
-// 2. Autor: Lizhong Tang , 4068443.
-// 3. Autor: Yuqi Han,     4070443.
+// 1. Autor: Jing Zhang,   4070426.                              //
+// 2. Autor: Lizhong Tang ,4068443.                                //
+// 3. Autor: Yuqi Han,     4070443.                                 //
 //                                                                  //
 //////////////////////////////////////////////////////////////////////
 
